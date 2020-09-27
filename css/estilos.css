@@ -96,13 +96,13 @@ transition: all 0.3s ease;
 }
 
 
-/* main section:first-child>div, main section:nth-child(2) div div, main section:nth-child(3) div:nth-child(2){ */
+/* main section:first-child div, main section:nth-child(2) div:nth-child(2) div, main section:nth-child(2) div:nth-child(3) div, main section:nth-child(2) div:nth-child(4) div, main section:nth-child(2) div:nth-child(5) div, main section:last-child div:nth-child(2) div, footer div:first-child{ */
 .row{
 max-width: 60rem;
 margin: 0 auto;
 }
 
-/* main section:first-child>div, main section:nth-child(2) div div, main section:nth-child(3) div:nth-child(2):after{ */
+/* main section:first-child div, main section:nth-child(2) div:nth-child(2) div, main section:nth-child(2) div:nth-child(3) div, main section:nth-child(2) div:nth-child(4) div, main section:nth-child(2) div:nth-child(5) div, main section:last-child div:nth-child(2) div, footer div:first-child:after{ */
 .row:after{
 	content:"";
 	display: block;
@@ -208,8 +208,8 @@ header>div>div div a:hover{
 	transition: all 0.5s ease;
 }
 
-/* main section:first-child div:first-child{ */
-.story{
+main section:first-child div:first-child{
+/* .story{ */
 	text-align: center;
 	overflow: hidden;
 }
@@ -219,18 +219,18 @@ h2{
 	padding: 3.5rem 2rem .5rem 2rem;
 }
 
-/* main section:first-child div:first-child>div{ */
-.story .texto{
+main section:first-child div:first-child>div{
+/* .story .texto{ */
 	padding: 3rem  10%;
 }
 
-/* main section:first-child div:first-child p{ */
-.story p{
+main section:first-child div:first-child p{
+/* .story p{ */
 	padding: 1rem;
 }
 
-/* main>section div:nth-child(2){ */
-.team{
+main section:first-child div:nth-child(2){
+/* .team{ */
 	text-align: center;
 }
 
