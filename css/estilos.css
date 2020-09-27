@@ -51,7 +51,6 @@ table {
 
 /*final reset*/
 
-
 *{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -71,8 +70,7 @@ font-family: 'PT Sans', sans-serif;
 
 }
 
-/* header nav ul li a{} */
-header a{
+header nav ul li a{
 font-family: 'PT Sans', sans-serif;
 text-decoration: none;
 color: #707070;
@@ -84,14 +82,15 @@ header a:hover{
 	transition: all 0.5s ease;
 }
 
-/* header nav div div:last-child */
-header #toggle_menu{
+header nav div div:last-child{
+/* header #toggle_menu{ */
 padding: 1rem 2.5rem;
 cursor: pointer;
 transition: all 0.3s ease;
 }
 
-header #toggle_menu:hover{
+header nav div div:last-child:hover{
+/* header #toggle_menu:hover{ */
 color:white;
 transition: all 0.3s ease;
 }
@@ -101,8 +100,9 @@ transition: all 0.3s ease;
 .row{
 max-width: 60rem;
 margin: 0 auto;
-
 }
+
+/* main section:first-child>div, main section:nth-child(2) div div, main section:nth-child(3) div:nth-child(2):after{ */
 .row:after{
 	content:"";
 	display: block;
@@ -110,14 +110,13 @@ margin: 0 auto;
 	clear:both;
 }
 
-
 img{
 	max-width: 100%;
 	height: auto;
 }
 
-/* header nav{ */
-#menu{
+header nav{
+/* #menu{ */
 	background-color: black;
 	font-weight: bold;
 	color: #707070;
@@ -126,8 +125,8 @@ img{
 	z-index: 100;
 	}
 
-/* header nav div>div{ */
-header #logo{
+header nav div div:first-child{
+/* header #logo{ */
 float: left;
 
 width:40px;
@@ -138,19 +137,20 @@ margin-left: 2.5rem;
 transition: all 0.3s ease;
 }
 
-header #logo:hover{
+header nav div div:first-child:hover{
+/* header #logo:hover{ */
 background: url("../images/logo.gif") no-repeat;
 transition: all 0.3s ease;
 }
 
-/* header nav div div:last-child */
-header #toggle_menu{
+header nav div div:last-child{
+/* header #toggle_menu{ */
 float:right;
 cursor: pointer;
 }
 
-/* header nav>div */
-header #cabecera{
+header nav>div{
+/* header #cabecera{ */
 	overflow: hidden;
 }
 
@@ -162,8 +162,8 @@ header nav ul li a{
 	padding: 1em;
 }
 
-/* header>div{ */
-.bosque{
+header>div{
+/* .bosque{ */
 background-image: url(../images/home.jpg);
 background-size: cover;
 background-repeat: no-repeat;
@@ -171,28 +171,28 @@ background-position: center top;
 overflow: none;
 }
 
-/* header>div>div{  */
-.home_bosque{
+header>div>div{ 
+/* .home_bosque{ */
 background-color: rgba(0,0,0,0.5);
 padding:30% 1rem 40% 1rem;
 text-align: center;
 color: white;
 }
 
-/* header>div>div p{ */
-.home_bosque .sub{
+header>div>div p{
+/* .home_bosque .sub{ */
 	font-size: 1rem;
 }
 
-/* header>div>div h1{ */
-.home_bosque h1{
+header>div>div h1{
+/* .home_bosque h1{ */
 	font-size: 1.7rem;
 	padding:  1.5rem 0rem;
 	text-align: center;
 }
 
-/* header>div>div div a{ */
-.cuadro_boton a{
+header>div>div div a{
+/* .cuadro_boton a{ */
 	color: white;
 	font-size: 0.8rem;
 	border: .062em solid #fff;
@@ -201,13 +201,14 @@ color: white;
 	transition: all 0.5s ease;
 }
 
-.cuadro_boton a:hover{
+header>div>div div a:hover{
+/* .cuadro_boton a:hover{ */
 	color: #707070;
 	background: white;
 	transition: all 0.5s ease;
 }
 
-/* main>section>div{ */
+/* main section:first-child div:first-child{ */
 .story{
 	text-align: center;
 	overflow: hidden;
@@ -218,12 +219,12 @@ h2{
 	padding: 3.5rem 2rem .5rem 2rem;
 }
 
-/* main>section>div>div{ */
+/* main section:first-child div:first-child>div{ */
 .story .texto{
 	padding: 3rem  10%;
 }
 
-/* main>section>div>div p{ */
+/* main section:first-child div:first-child p{ */
 .story p{
 	padding: 1rem;
 }
@@ -537,8 +538,8 @@ border: 0px;
  .col-t-11{width: 91.6%;}
  .col-t-12{width: 100%;}
 
-
-.home_bosque{
+ header>div>div{ 
+/* .home_bosque{ */
 padding:20% 1rem 25% 1rem;
 
 }
@@ -571,18 +572,22 @@ header nav ul{
 	margin-right: 15%;
 }
 
-header #logo{
+header nav div div:first-child{
+/* header #logo{ */
 	margin-left: 6rem;
 }
-#cabecera{
 
+header nav>div{
+/* #cabecera{ */
 float: left;
 }
-header #toggle_menu{
+header nav div div:last-child{
+/* header #toggle_menu{ */
 		display: none;
 	}
 
-#menu{
+header nav{
+/* #menu{ */
 	overflow: hidden;
 }
 
@@ -658,16 +663,12 @@ width: 100%;
 		 	100%{
 		 		transform: scale(1.1) translateX(0.8rem);
 		 	}
-
 		}
-
 
 .aside .mailto{
 	font-size: 1rem;
 
 	 }
-
-
 }
 
 
